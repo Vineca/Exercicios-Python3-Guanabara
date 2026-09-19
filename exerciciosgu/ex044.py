@@ -1,0 +1,6 @@
+preço = float(input('Qual o preço do produto: '))
+pagamento = int(input('FORMAS DE PAGAMENTO \n[1] À vista dinheiro/cheque: 10% de desconto \n[2] À vista no cartão: 5% de desconto \n[3] Em até 2x no cartão: preço normal \n[4] 3x ou mais no cartão: 20% de juro \n Qual a forma de pagamento: '))
+if pagamento == 1: print('O valor final é: {}'.format(0.9*preço))
+elif pagamento == 2: print('O valor final é: {}'.format(0.95*preço))
+elif pagamento == 3 : print('O valor final é: {}'.format(preço))
+elif pagamento == 4 : print('O valor final é: {}'.format(preço*1.2))
